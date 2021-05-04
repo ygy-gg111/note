@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            width: 100%;
+            height: 150px;
+            background-color: pink;
+            flex-flow: row wrap;
+            min-width: 320px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        div span:nth-child(1) {
+            width: 100px;
+            height: 150px;
+            background-color: red;
+        }
+
+        div span:nth-child(2) {
+            flex: 1;
+            background-color: green;
+        }
+
+        div span:nth-child(3) {
+            width: 100px;
+            height: 150px;
+            background-color: blue;
+        }
+
+        p {
+            display: flex;
+            width: 100%;
+            min-width: 320px;
+            max-width: 640px;
+            height: 150px;
+            background-color: pink;
+            margin: 200px auto;
+        }
+
+        p span {
+            /* 不要给子盒子宽度 */
+            flex: 1;
+        }
+        /* 如果某一分占的比例比较多  把主分数分成多分让他占多分 其他的盒子会平均剩余的空间*/
+        p span:nth-child(2){
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <p>
+        <span></span>
+        <span></span>
+        <span></span>
+    </p>
+</body>
+
+</html>

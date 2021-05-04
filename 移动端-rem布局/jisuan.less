@@ -1,0 +1,20 @@
+// 加减乘除中的运算符左右必须要留有空格
+// 可以在变量名中加减乘除
+@border:5 + 10px ;
+@bgc:pink;
+html{
+    font-size: 14px;
+}
+div{
+    // 也可以在定义中加减乘除
+// 如果运算的俩个数都有单位 则最后结果以第一个单位为准
+    width: 200rem / 14px;
+    // 如果运算的俩个数,只有一个单位,则以这个单位为准
+    height: 200 / 14rem;
+    border: @border solid red;
+    background-color:@bgc;
+    span{
+        font-size: (0.5rem + 0.1) * 2;
+        background-color:@bgc;
+    }
+}

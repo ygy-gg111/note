@@ -1,0 +1,33 @@
+div{
+    background-color: pink;
+    width: 200px;
+    height: 300px;
+    span{
+        font-size: 14px;
+        color: deeppink;
+     
+    }
+    &::before{
+        content: "";
+
+    }
+}
+nav{
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 100px;
+    a{
+      font-size: 16px;
+      text-decoration: none;
+      color: pink;
+    //   有伪类选择器或者伪元素 以及并集选择器在之前加一个&，不加的话会默认为后代选择器
+      &:hover{
+          color: deeppink;
+          font-size: 20px;
+      }
+      
+    }
+    
+  }
+  

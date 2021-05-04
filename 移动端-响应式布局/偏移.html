@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap使用/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .row>div {
+            background-color: pink;
+
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">2</div>
+            <!-- 偏移的份数=12-俩个盒子的份数 -->
+            <div class="col-md-4 col-md-offset-4">2</div>
+
+
+        </div>
+        <div class="row">
+            <!-- 如果一行中只有一个盒子 想让他水平居中 可以设置偏移=12-剩下份数的一半 -->
+            <div class="col-md-8  col-md-offset-2">2</div>
+        </div>
+</body>
+
+</html>
