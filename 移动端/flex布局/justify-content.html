@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            width: 800px;
+            height: 500px;
+            background-color: pink;
+            /* 先确认好主轴 */
+            flex-direction: row;
+            /* 默认值，从头部开始，从左到右  控制父元素里的子元素*/
+            justify-content: flex-start;
+            /* 从右到左 */
+            justify-content: flex-end;
+            /* 水平对齐 */
+            justify-content: center;
+            /* 平分剩余空间 */
+            justify-content: space-around;
+            /* 俩边贴边 ，平分剩余的空间 */
+            justify-content: space-between;
+             /* 可以改变主轴的方向 */
+             flex-direction: column;
+               /* 默认值，从头部开始，从左到右  控制父元素里的子元素*/
+            justify-content: flex-start;
+               /* 从右到左 */
+               justify-content: flex-end;
+                 /* 可以让块元素居中对齐 */
+            justify-content: center;
+            /* 平分剩余空间 */
+            justify-content: space-around;
+              /* 俩边贴边 ，平分剩余的空间 */
+              justify-content: space-between;
+
+
+
+
+        }
+        .box span{
+
+                width: 100px;
+                height: 100px;
+                background-color: purple;
+        }
+    </style>
+</head>
+<body><body>
+    <div class="box">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+    
+</body>
+</html>
